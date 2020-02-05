@@ -1,3 +1,8 @@
-body {
-  background-color: #00f;
-}
+@import 'base/colors';
+@import 'base/reset';
+
+@import 'layout/general';
+@import 'layout/header';
+
+@import 'module/main-nav';
+@import 'module/site-title';

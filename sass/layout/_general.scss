@@ -1,0 +1,15 @@
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  &--nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 675px) {
+      flex-direction: column;
+    }
+  }
+}

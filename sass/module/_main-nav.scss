@@ -1,0 +1,45 @@
+.main-nav {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-text-dark;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 675px) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    margin-left: 2em;
+
+    @media (max-width: 675px) {
+      margin: 0.5em 0;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-text-dark;
+    font-weight: 700;
+    padding: 0.25em 0;
+    transition: all 0.2s;
+
+    &:hover,
+    &:active {
+      color: $color-secondary;
+    }
+
+    &--current {
+      border-bottom: 2px solid $color-text-dark;
+
+      &:hover {
+        color: $color-text-dark;
+      }
+    }
+  }
+}

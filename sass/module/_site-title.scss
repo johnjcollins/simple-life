@@ -1,0 +1,20 @@
+.site-title {
+  &__main {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: $color-primary;
+    font-size: 3.3rem;
+  }
+
+  &__sub {
+    font-weight: 700;
+    color: $color-secondary;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.24rem;
+  }
+
+  @media (max-width: 675px) {
+    margin-bottom: 1em;
+  }
+}
